@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_store"
+        android:icon="@drawable/ic_v_tab_shop"
+        android:title="@string/tab_store" />
+
+    <item
+        android:id="@+id/navigation_game"
+        android:icon="@drawable/ic_v_tab_game"
+        android:title="@string/tab_game" />
+
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/ic_v_tab_user"
+        android:title="@string/tab_mine" />
+
+</menu>

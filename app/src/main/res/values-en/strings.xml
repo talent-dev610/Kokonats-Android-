@@ -1,0 +1,77 @@
+<resources>
+
+    <string name="get_started_by_creating_your_account">Get Started By \nCreating Your Account</string>
+    <string name="games">Games</string>
+    <string name="tournament">Tournament</string>
+    <string name="tnmt_history">Tournament History</string>
+    <string name="tnmt_n_history">Tournament\nHistory</string>
+    <string name="view_more">View All</string>
+    <string name="game_need_energy">%d Enter</string>
+    <string name="play_now">Play Now</string>
+    <string name="game_ended">END</string>
+    <string name="game_full">FULL</string>
+    <string name="rules">Rules</string>
+    <string name="sponsor_copy_hint">For Koko Exchange, Copy and paste the link into your browser.</string>
+    <string name="payout_one">%s</string>
+    <string name="payout_multi">%1$s-%2$s</string>
+    <string name="rank">Score ranking</string>
+    <string name="store">Store</string>
+    <string name="match_ing">Matching</string>
+    <string name="get_score">Points</string>
+    <string name="score">Score</string>
+    <string name="back">Back</string>
+    <string name="play_again">Play Again</string>
+    <string name="all">ALL</string>
+    <string name="new_caps">NEW</string>
+    <string name="pvp">PVP</string>
+    <string name="practise">Practise</string>
+    <string name="total">Total</string>
+    <string name="logout">Logout</string>
+    <string name="game_status">RESULT</string>
+    <string name="game_win">WIN</string>
+    <string name="game_lost">LOST</string>
+    <string name="game_draw">DRAW</string>
+    <string name="game_playing">PLAYING</string>
+    <string name="game_waiting">WAITING</string>
+    <string name="energy">ENERGY</string>
+    <string name="buy_energy">Buy Energy</string>
+    <string name="items">ITEMS</string>
+    <string name="purchased">Purchased</string>
+    <string name="enter_now">Play Now</string>
+    <string name="time_left">%1$s LEFT</string>
+    <string name="enter_again">Play Again</string>
+    <string name="enter_tournament">Enter Tournament</string>
+    <string name="use_energy_tournament">Do u want to use %1$d energy\nto enter this tournament?</string>
+
+
+    <string name="copy_success">Copy successfully</string>
+    <string name="copy_fail">Copy failed</string>
+    <string name="enter_game_failed">Failed to enter the game</string>
+    <string name="congratulate_win">Congratulations! %1$s win %2$s! Congratulations!</string>
+    <string name="pvp_other_not_finish">The opponent\'s play is not over yet</string>
+    <string name="pvp_matching_failed">No matching partner was found.</string>
+
+    <string name="waiting">waiting</string>
+
+    <!--    dialog-->
+    <string name="dialog_common_head">Hint</string>
+    <string name="dialog_common_ok">OK</string>
+    <string name="play_energy_not_enough">There is not enough energy.</string>
+    <string name="dialog_common_cancel">Cancel</string>
+    <string name="play_energy_right">Charge</string>
+    <string name="pvp_enter_content">Matching start</string>
+    <string name="dialog_common_go">GO!</string>
+    
+    <!--  chat dialog  -->
+    <string name="chat_title_public">Channel</string>
+    <string name="chat_title_dm">DM</string>
+    <string name="chat_title_cs">Support</string>
+    <string name="chat_search_public">Enter Room Number</string>
+    <string name="chat_search_dm">Enter User name</string>
+
+    <!-- tutorial -->
+    <string name="tutorial_message_1">Play games with\nENERGY\nCan buy ENERGY\nin store page.</string>
+    <string name="tutorial_message_2">Win tournament\nto get KOKO.\nCan buy game items\nwith KOKO.</string>
+    <string name="tutorial_message_3">Can also exchange\nKOKO</string>
+    <string name="tutorial_start">TAP TO START</string>
+</resources>

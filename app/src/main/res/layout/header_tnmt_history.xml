@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h16"
+        android:text="@string/tnmt_n_history"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_28"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_all"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/h16"
+        android:background="@drawable/rect14_trans_black323755"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/w20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_0"
+        app:layout_constraintWidth_max="200dp">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:text="@string/all"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_12"
+            android:textStyle="bold"
+            tools:text="111111111111" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/w20"
+            android:src="@drawable/ic_v_arrow_down8" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="@dimen/h2"
+        android:textColor="@color/yellow_ffcb00"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_all"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="+12354" />
+
+    <ImageView
+        android:id="@+id/iv_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/h15"
+        android:layout_marginEnd="@dimen/w5"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_koko"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_reward"
+        app:layout_constraintRight_toLeftOf="@+id/tv_reward"
+        app:layout_constraintTop_toTopOf="@+id/tv_reward" />
+
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingBottom="@dimen/h2"
+        android:text="@string/total"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBottom_toTopOf="@+id/tv_reward"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_reward"
+        app:layout_constraintRight_toRightOf="@+id/tv_reward"
+        app:layout_constraintTop_toTopOf="@id/ll_all" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

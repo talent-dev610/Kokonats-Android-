@@ -1,0 +1,127 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        buildConfigField("String", "V_CODE", "\"" + rootProject.ext.android.versionName + "\"")
+    }
+
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+
+    buildTypes {
+        release {
+            buildConfigField "String", "HOST", '"https://kokonuts-server-gateway-jx-staging.kokonats.club"'
+        }
+
+        debug {
+            buildConfigField "String", "HOST", '"https://kokonuts-server-gateway-jx-staging.kokonats.club"'
+        }
+    }
+}
+
+dependencies {
+
+    api rootProject.depends.ktLib
+    testImplementation rootProject.depends.junit
+    androidTestImplementation rootProject.depends.junitExt
+    androidTestImplementation rootProject.depends.espresso
+
+
+    api rootProject.depends.material
+    api rootProject.depends.appcompat
+    api rootProject.depends.core
+    api rootProject.depends.coreKtx
+    api rootProject.depends.annotation
+
+    api rootProject.depends.activity
+    api rootProject.depends.activityKtx
+    api rootProject.depends.fragment
+    api rootProject.depends.fragmentKtx
+
+
+    api rootProject.depends.constraintlayout
+    api rootProject.depends.recyclerview
+    api rootProject.depends.flexbox
+    api rootProject.depends.cardview
+
+
+    api rootProject.depends.viewmodel
+    api rootProject.depends.viewmodelKtx
+    api rootProject.depends.livedata
+    api rootProject.depends.livedataKtx
+    api rootProject.depends.lifecycleProcess
+
+    api rootProject.depends.navFragment
+    api rootProject.depends.navUI
+
+    api rootProject.depends.multidex
+
+    api rootProject.depends.glide
+//    api rootProject.depends.glideTransform
+    kapt rootProject.depends.glideApt
+
+    api rootProject.depends.retrofit
+    api rootProject.depends.retrofitGson
+
+    api rootProject.depends.okhttp
+    api rootProject.depends.okhttpLogging
+
+    api rootProject.depends.chadAdapter
+
+    debugApi rootProject.depends.chuckDebug
+    releaseApi rootProject.depends.chuckRelease
+
+//    api rootProject.depends.kodeinBase
+//    api rootProject.depends.kodeinX
+//    api rootProject.depends.kodeinVM
+//    api rootProject.depends.kodeinVMState
+
+    api rootProject.depends.arouter
+//    kapt rootProject.depends.arouterApt
+
+    api rootProject.depends.permission
+
+
+    api rootProject.depends.mmkv
+
+
+    api rootProject.depends.refreshCore
+    api rootProject.depends.refreshClassic
+    api rootProject.depends.refreshHeader
+
+    api rootProject.depends.stetho
+    api rootProject.depends.stethoJs
+
+    api rootProject.depends.tabLayout
+
+    api rootProject.depends.room
+    api rootProject.depends.roomKtx
+
+    api rootProject.depends.easyFloat
+
+}

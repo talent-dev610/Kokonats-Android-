@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.biiiiit.kokonats">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <application
+        android:name=".KokoApp"
+        android:allowBackup="true"
+        android:fullBackupOnly="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kokonats"
+        android:usesCleartextTraffic="true"
+        tools:ignore="LockedOrientationActivity"
+        tools:targetApi="n">
+        <activity
+            android:name=".ui.store.item.StoreGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.store.energy.StoreEnergyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.game.ui.activity.GameDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.game.ui.activity.GameTnmtActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.game.ui.activity.PvPGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.game.ui.activity.TnmtResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.game.ui.activity.PlayGameActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.ui.UserTnmtHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.ui.UserInfoEditActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.chat.activity.ChatMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.KokonatsChat" />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+</manifest>

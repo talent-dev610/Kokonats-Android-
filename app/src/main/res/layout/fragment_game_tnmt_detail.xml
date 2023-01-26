@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/common_header_margin">
+
+    <com.scwang.smart.refresh.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.biiiiit.kokonats.ui.custome.HeaderEnergyBackView
+                android:id="@+id/header_energy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h44"
+                android:layout_marginHorizontal="@dimen/common_margin_53" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/common_margin_53"
+                android:layout_marginTop="@dimen/h13">
+
+                <ImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@mipmap/ic_launcher" />
+
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="@dimen/w35"
+                    android:layout_height="@dimen/w35"
+                    app:layout_constraintRight_toRightOf="@+id/iv_cover"
+                    app:layout_constraintTop_toTopOf="@+id/iv_cover" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_play"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h48"
+                android:layout_marginTop="@dimen/h16"
+                android:layout_marginBottom="@dimen/h17"
+                android:gravity="center"
+                tools:background="@drawable/rect9_black323755"
+                android:layout_marginHorizontal="@dimen/common_margin_53"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font_12"
+                    android:textStyle="bold"
+                    tools:text="@string/enter_now" />
+                <TextView
+                    android:id="@+id/tv_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font_12"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:text="17:00"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/common_margin_53"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_13"
+                tools:text="トーナメント詳細ゲーム詳細トーナメント詳細ゲーム詳細トーナメント詳細ゲーム詳細トーナメント詳細ゲーム詳細トーナメント詳細ゲーム詳細トーナメント詳細ゲーム詳細トーナメント詳細ゲーム詳細トーナメント詳細ゲーム詳細トーナメント詳細ゲーム詳細。" />
+
+
+
+            <TextView
+                android:id="@+id/tv_reward_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_margin_53"
+                android:layout_marginTop="@dimen/h15"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/rules"
+                android:textColor="@color/gray_d8d8d8"
+                android:textSize="@dimen/font_12" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/common_margin_53"
+                android:nestedScrollingEnabled="false"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_tnmt_payout_rule" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_sponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_energy"
+                android:layout_marginTop="@dimen/h10"
+                android:layout_marginHorizontal="@dimen/common_margin_53"
+                app:cardCornerRadius="@dimen/dp_10"
+                app:cardElevation="@dimen/dp_10"
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/black_21283f">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/h20">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <ImageView
+                            android:id="@+id/iv_banner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sponsor_background"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Supported By CLOUD7"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/font_14"
+                            android:layout_gravity="center"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:paddingHorizontal="@dimen/w30"
+                            android:paddingVertical="@dimen/h8"
+                            android:background="@color/color_white"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tv_energy_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="For more information,\nPlease check CLOUD7"
+                        android:textColor="@color/black_7583ca"
+                        android:textSize="@dimen/font_14"
+                        app:layout_constraintTop_toBottomOf="@+id/cl_banner"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/w20"
+                        android:layout_marginTop="@dimen/h20" />
+                    <TextView
+                        android:id="@+id/tv_energy_url"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="https://cloud7.link/"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/font_14"
+                        android:layout_marginTop="@dimen/h5"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_energy_title"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/w20" />
+                    <ImageView
+                        android:id="@+id/iv_sponsor_copy"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/circle_black191a32_ripple"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_energy_url"
+                        android:src="@drawable/ic_copy"
+                        android:scaleType="fitXY"
+                        android:padding="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginEnd="@dimen/w20"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_history_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_margin_53"
+                android:layout_marginTop="@dimen/h18"
+                android:fontFamily="sans-serif-black"
+                android:paddingBottom="@dimen/h2"
+                android:text="@string/rank"
+                android:textColor="@color/gray_d8d8d8"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/common_margin_53"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="@dimen/h11"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_tnmt_play_rank" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

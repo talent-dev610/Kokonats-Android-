@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_game">
+
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.biiiiit.kokonats.ui.store.HomeStoreFragment"
+        android:label="@string/tab_store"
+        tools:layout="@layout/fragment_home_store" />
+
+    <fragment
+        android:id="@+id/navigation_game"
+        android:name="com.biiiiit.kokonats.ui.game.ui.fragment.HomeGameFragment"
+        android:label="@string/tab_game"
+        tools:layout="@layout/fragment_home_game" />
+
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="com.biiiiit.kokonats.ui.user.ui.UserInfoFragment"
+        android:label="@string/tab_mine"
+        tools:layout="@layout/fragment_user_info" />
+</navigation>

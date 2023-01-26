@@ -1,0 +1,125 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    signingConfigs {
+        release {
+            storeFile file("../kokonats.keystore")
+            storePassword "clubkokonats"
+            keyAlias "kokonats"
+            keyPassword "subclubkokonats"
+        }
+    }
+    defaultConfig {
+        applicationId "club.kokonats.koko"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled true
+
+
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas")
+                arg("room.incremental", true)
+                arg("room.expandProjection", true)
+            }
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            shrinkResources false
+
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField "String", "CLIENT_ID", '"124310744417-1bfi3vm4kaidqi57gffbjik9m29dr7le.apps.googleusercontent.com"'
+            buildConfigField "String", "TOURNAMENT_PLAY_DOC", '"dev-tournamentPlay"'
+            buildConfigField "String", "MATCH_SESSION_DOC", '"dev-matchingSessions"'
+            buildConfigField "String", "MATCH_PLAY_DOC", '"dev-matchPlay"'
+            buildConfigField "String", "CHAT_THREAD", '"dev-chatThread"'
+            buildConfigField "String", "CHAT_MESSAGE", '"dev-chatMessage"'
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+
+            signingConfig signingConfigs.release
+
+            buildConfigField "String", "CLIENT_ID", '"124310744417-1bfi3vm4kaidqi57gffbjik9m29dr7le.apps.googleusercontent.com"'
+            buildConfigField "String", "TOURNAMENT_PLAY_DOC", '"dev-tournamentPlay"'
+            buildConfigField "String", "MATCH_SESSION_DOC", '"dev-matchingSessions"'
+            buildConfigField "String", "MATCH_PLAY_DOC", '"dev-matchPlay"'
+            buildConfigField "String", "CHAT_THREAD", '"dev-chatThread"'
+            buildConfigField "String", "CHAT_MESSAGE", '"dev-chatMessage"'
+        }
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+}
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation rootProject.depends.junit
+    androidTestImplementation rootProject.depends.junitExt
+    androidTestImplementation rootProject.depends.espresso
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(':lib_base')
+
+    // in-app purchase
+    implementation rootProject.depends.bill
+    implementation rootProject.depends.billKt
+
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+
+    // https://firebase.google.com/docs/android/setup?authuser=0
+
+    debugImplementation rootProject.depends.leakCanary
+
+    kapt rootProject.depends.arouterApt
+//    kapt rootProject.depends.roomApt
+
+}
+
+

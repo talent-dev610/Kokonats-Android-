@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="login_expire">Login expire</string>
+    <string name="network_error">Network error</string>
+    <string name="parse_data_error">Parse data error</string>
+    <string name="unsafe_network">Unsafe Network</string>
+    <string name="connect_timeout">Connect Timeout</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="no_data">No data</string>
+    <string name="loading_dot">loading…</string>
+</resources>

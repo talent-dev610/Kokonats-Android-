@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_marginHorizontal="@dimen/common_margin_53"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+
+    <ImageView
+        android:id="@+id/iv_sponsor_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_def_store_top" />
+
+    <ImageView
+        android:id="@+id/iv_copy"
+        android:layout_width="@dimen/w35"
+        android:layout_height="@dimen/w35"
+        android:layout_marginEnd="@dimen/h20"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_v_copy"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_url"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sponsor_logo"
+        app:layout_constraintVertical_bias="0.4375" />
+
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/w17"
+        android:layout_marginEnd="@dimen/w20"
+        android:paddingTop="@dimen/h12"
+        android:textColor="@color/black_7583ca"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_copy"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sponsor_logo"
+        tools:text="@string/sponsor_copy_hint" />
+
+    <TextView
+        android:id="@+id/tv_url"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/w17"
+        android:layout_marginTop="@dimen/h5"
+        android:layout_marginEnd="@dimen/h20"
+        android:paddingBottom="@dimen/h20"
+        android:singleLine="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_12"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_copy"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hint"
+        tools:text="https://market.koko.club/" />
+
+</merge>

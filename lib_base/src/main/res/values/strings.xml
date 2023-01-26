@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_expire">ログインの有効期限が切れました</string>
+    <string name="network_error">ネットワークエラー</string>
+    <string name="parse_data_error">異常なデータの解析</string>
+    <string name="unsafe_network">安全でないネットワーク</string>
+    <string name="connect_timeout">接続がタイムアウトしました</string>
+    <string name="unknown_error">未知の間違い</string>
+    <string name="no_data">データなし</string>
+    <string name="loading_dot">読み込み中…</string>
+
+</resources>

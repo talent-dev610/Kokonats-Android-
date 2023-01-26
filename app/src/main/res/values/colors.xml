@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_bg">#191A32</color>
+    <color name="common_90_bg">#F2191A32</color>
+
+
+    <color name="color_white">#ffffff</color>
+
+
+    <color name="color_black">#000000</color>
+    <color name="black_4c000000">#4C000000</color>
+    <color name="black_212837">#212837</color>
+    <color name="black_1affcb00">#1AFFCB00</color>
+    <color name="black_21283f">#21283F</color>
+    <color name="black_262426">#262426</color>
+    <color name="black_7583ca">#7583CA</color>
+    <color name="black_19ffcb00">#19FFCB00</color>
+    <color name="black_323755">#323755</color>
+    <color name="black_191a32">#191a32</color>
+    <color name="black_302c2d">#302c2d</color>
+
+    <color name="blue_4870ff">#4870FF</color>
+    <color name="blue_1a4870ff">#1a4870FF</color>
+
+    <color name="green_2b3a34">#2B3A34</color>
+    <color name="green_00cb75">#00CB75</color>
+    <color name="green_4fc6b9">#4FC6B9</color>
+
+
+    <color name="brown_8F4F29">#8F4F29</color>
+
+
+    <color name="yellow_ffcb00">#FFCB00</color>
+    <color name="yellow_fabe2c">#FABE2C</color>
+    <color name="yellow_ff9900">#FF9900</color>
+    <color name="yellow_88ff9900">#88FF9900</color>
+
+    <color name="red_dc5328">#DC5328</color>
+    <color name="red_ef5da8">#EF5DA8</color>
+    <color name="red_fcddec">#FCDDEC</color>
+    <color name="red_f178b6">#F178B6</color>
+    <color name="red_eb5757">#EB5757</color>
+
+    <color name="gray_d8d8d8">#d8d8d8</color>
+    <color name="gray_767676">#767676</color>
+    <color name="gray_c0c6dd">#c0c6dd</color>
+
+</resources>

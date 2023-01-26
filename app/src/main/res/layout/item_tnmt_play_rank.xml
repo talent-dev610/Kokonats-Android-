@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/h9"
+    android:padding="1dp">
+
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="01" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/w12"
+        android:fontFamily="sans-serif-black"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_24"
+        app:layout_constraintLeft_toRightOf="@+id/tv_rank"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_rank"
+        tools:text="12324123" />
+
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_13"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_rank"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_score"
+        app:layout_constraintRight_toRightOf="@+id/tv_score"
+        tools:text="Username" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

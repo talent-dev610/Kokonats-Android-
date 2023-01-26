@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--<base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" overridePins="true" />
+            <certificates src="user" overridePins="true" />
+        </trust-anchors>
+    </base-config>-->
+    <base-config cleartextTrafficPermitted="true" />
+
+    <debug-overrides>
+        <trust-anchors>
+            <certificates
+                overridePins="true"
+                src="system" />
+            <certificates
+                overridePins="true"
+                src="user" />
+        </trust-anchors>
+    </debug-overrides>
+
+    <domain-config>
+        <domain includeSubdomains="true">kokonats-game-assets.s3.ap-northeast-1.amazonaws.com
+        </domain>
+        <domain includeSubdomains="true">kokonats.club
+        </domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <!--<trust-anchors>-->
+        <!--<certificates src="@raw/trusted_roots"/>-->
+        <!--</trust-anchors>-->
+    </domain-config>
+
+</network-security-config>

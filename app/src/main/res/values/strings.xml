@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name" translatable="false">KOKO - eSports</string>
+    <string name="tab_store" translatable="false">Store</string>
+    <string name="tab_game" translatable="false">Game</string>
+    <string name="tab_mine" translatable="false">Mine</string>
+    <string name="server_web_client_id" translatable="false">740600456391-mqrl26uk1vdqvbuieeeo0r6335iut0of.apps.googleusercontent.com</string>
+    <string name="transition_chat" translatable="false">tab_transition_chat</string>
+
+
+    <string name="get_started_by_creating_your_account">アカウント作成</string>
+    <string name="games">ゲーム</string>
+    <string name="tournament">トーナメント</string>
+    <string name="tnmt_history">トーナメント参加履歴</string>
+    <string name="tnmt_n_history">トーナメント\n参加履歴</string>
+    <string name="view_more">もっと見る</string>
+    <string name="game_need_energy">%dで参加</string>
+    <string name="play_now">今すぐ参加</string>
+    <string name="game_ended">終了</string>
+    <string name="game_full">満員</string>
+    <string name="rules">ルール</string>
+    <string name="sponsor_copy_hint">For Koko Exchange, Copy and paste the link into your browser.</string>
+    <string name="payout_one">%s位</string>
+    <string name="payout_multi">%1$s位-%2$s位</string>
+    <string name="rank">スコアランキング</string>
+    <string name="store">ショップ</string>
+    <string name="match_ing">マッチング</string>
+    <string name="get_score">取得スコア</string>
+    <string name="score">スコア</string>
+    <string name="back">ホームに戻る</string>
+    <string name="play_again">もう一度参加</string>
+    <string name="all">全部</string>
+    <string name="new_caps">新作</string>
+    <string name="pvp">PVP</string>
+    <string name="practise">練習</string>
+    <string name="total">合計</string>
+    <string name="logout">ログアウト</string>
+    <string name="game_status">取得順位</string>
+    <string name="game_win">WIN</string>
+    <string name="game_lost">LOST</string>
+    <string name="game_draw">DRAW</string>
+    <string name="game_playing">PLAYING</string>
+    <string name="game_waiting">WAITING</string>
+    <string name="energy">エナジー</string>
+    <string name="buy_energy">エナジーを購入</string>
+    <string name="items">アイテム</string>
+    <string name="purchased">購入済み</string>
+    <string name="enter_now">今すぐ参加</string>
+    <string name="time_left">後 %1$s</string>
+    <string name="enter_again">参加して点数を更新</string>
+    <string name="enter_tournament">トーナメントに参加</string>
+    <string name="use_energy_tournament">%1$d エナジーを消費して\n参加しますか？</string>
+
+
+    <string name="copy_success">クリップボードに保存された</string>
+    <string name="copy_fail">コピーに失敗しました</string>
+    <string name="enter_game_failed">ゲームに参加できませんでした</string>
+    <string name="congratulate_win">おめでとうございます! %1$s  %2$s 獲得! おめでとうございます!</string>
+    <string name="pvp_other_not_finish">相手のプレイがまだ終わってません</string>
+    <string name="pvp_matching_failed">マッチング相手見つかりませんでした。</string>
+
+    <string name="waiting">待っている</string>
+
+    <!--    dialog-->
+    <string name="dialog_common_head">メッセージタイトル</string>
+    <string name="dialog_common_ok">OK</string>
+    <string name="play_energy_not_enough">Energyが不足しています。</string>
+    <string name="dialog_common_cancel">キャンセル</string>
+    <string name="play_energy_right">チャージする</string>
+    <string name="pvp_enter_content">マッチング開始</string>
+    <string name="dialog_common_go">GO!</string>
+
+    <!--  chat dialog  -->
+    <string name="chat_title_public">オープン</string>
+    <string name="chat_title_dm">ダイレクト</string>
+    <string name="chat_title_cs">運営</string>
+    <string name="chat_search_public">Enter Room Number</string>
+    <string name="chat_search_dm">Enter User name</string>
+
+    <!-- tutorial -->
+    <string name="tutorial_message_1">エナジーを使用して\nゲームに参加しよう！\nエナジーはストアから\n購入できます</string>
+    <string name="tutorial_message_2">トーナメントに参加して\nココナッツを稼ごう！\n貯めたココナッツで\nアイテムをゲット</string>
+    <string name="tutorial_message_3">稼いだココナッツは\n交換もできる！</string>
+    <string name="tutorial_start">タップでスタート</string>
+    
+</resources>

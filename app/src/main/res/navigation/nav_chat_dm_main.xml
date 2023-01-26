@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_chat_dm_main"
+    app:startDestination="@id/nav_chat_dm_title">
+
+
+    <fragment
+        android:id="@+id/nav_chat_dm_title"
+        android:name="com.biiiiit.kokonats.ui.chat.fragment.ChatDMTitleFragment"
+        tools:layout="@layout/fragment_chat_room_title">
+
+        <action
+            android:id="@+id/action_chat_dm_title_detail"
+            app:destination="@+id/nav_chat_dm_detail"
+            app:enterAnim="@anim/enter_in"
+            app:exitAnim="@anim/enter_out"
+            app:popExitAnim="@anim/exit_out"
+            app:popEnterAnim="@anim/exit_in"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_chat_dm_detail"
+        android:name="com.biiiiit.kokonats.ui.chat.fragment.ChatDMDetailFragment"
+        tools:layout="@layout/fragment_chat_dm_list" />
+
+</navigation>

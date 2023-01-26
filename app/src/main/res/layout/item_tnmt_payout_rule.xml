@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/h17"
+    tools:viewBindingIgnore="true">
+
+    <View
+        android:id="@+id/view_0"
+        android:layout_width="@dimen/h11"
+        android:layout_height="@dimen/h11"
+        android:background="@drawable/oval_redef5da8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/w9"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/red_ef5da8"
+        android:textSize="@dimen/font_13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/view_0"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1位" />
+
+    <TextView
+        android:id="@+id/tv_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:minHeight="@dimen/h29"
+        android:textColor="@color/yellow_ffcb00"
+        android:textSize="@dimen/font_24"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="+1,000" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/h26"
+        android:layout_marginEnd="@dimen/w8"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_koko"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_reward"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

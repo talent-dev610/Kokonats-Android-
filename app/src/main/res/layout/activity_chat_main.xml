@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="@dimen/h38"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h36"
+        android:layout_marginEnd="@dimen/common_margin_53"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_v_exit_gray_x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h36"
+        android:layout_marginHorizontal="@dimen/common_margin_53"
+        android:layout_marginTop="@dimen/h20"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cancel">
+
+        <TextView
+            android:id="@+id/tvRoom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/w5"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_tab"
+            android:gravity="center"
+            android:text="@string/chat_title_public"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_16" />
+
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/w5"
+            android:layout_marginEnd="@dimen/w5"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_tab"
+            android:gravity="center"
+            android:text="@string/chat_title_dm"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/tvCustomer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/w5"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_tab"
+            android:gravity="center"
+            android:text="@string/chat_title_cs"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_16" />
+
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_tab" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

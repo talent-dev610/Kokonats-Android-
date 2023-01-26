@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/common_margin_53">
+
+    <EditText
+        android:id="@+id/et_room"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h40"
+        android:layout_marginTop="@dimen/h28"
+        android:layout_marginBottom="@dimen/h18"
+        android:background="@drawable/rect10_c4c4c4"
+        android:fontFamily="sans-serif-medium"
+        android:imeOptions="actionSearch"
+        android:paddingHorizontal="@dimen/w20"
+        android:singleLine="true"
+        android:textColor="@color/color_white"
+        android:textColorHint="@color/black_4c000000"
+        android:textSize="@dimen/font_14"
+        android:transitionName="@string/transition_chat" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_chat_room" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/h12"
+    android:elevation="@dimen/h8"
+    android:layout_marginBottom="6dp"
+    android:layout_marginHorizontal="3dp"
+    android:background="@drawable/rect10_black21283f_ripple_shadow">
+
+    <TextView
+        android:id="@+id/tv_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect10_red"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="キャンペーン"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_12"
+        android:gravity="center"
+        android:paddingVertical="@dimen/h4"/>
+
+    <ImageView
+        android:id="@+id/iv_energy"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/oval_black19ffcb00"
+        android:paddingVertical="@dimen/h9"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_v_energy16"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/h28"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h6"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_energy"
+        tools:text="+120" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h6"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_20"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_energy"
+        tools:text="¥10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

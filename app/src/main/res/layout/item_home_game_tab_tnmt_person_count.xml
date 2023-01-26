@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_desc"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/min_avatar_30"
+    android:background="@drawable/rect18_blue4870ff"
+    android:gravity="center"
+    android:minWidth="@dimen/min_avatar_30"
+    android:paddingHorizontal="@dimen/w2"
+    android:textColor="@color/color_white"
+    android:textSize="@dimen/font_10"
+    tools:text="12/23"
+    tools:viewBindingIgnore="false">
+
+</TextView>
